@@ -1,0 +1,23 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Destination Event API",
+    "version": "1.0.0"
+  },
+  "components": {
+    "schemas": {
+      "EventRecord": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "eventStart": { "type": "string", "format": "date-time" },
+          "statusCode": { "type": "string", "enum": ["D", "P", "X"] },
+          "locationCity": { "type": "string" },
+          "locationCountry": { "type": "string" }
+        },
+        "required": ["id", "title", "eventStart", "statusCode"]
+      }
+    }
+  }
+}

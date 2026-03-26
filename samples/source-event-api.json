@@ -1,0 +1,29 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Source Event API",
+    "version": "1.0.0"
+  },
+  "components": {
+    "schemas": {
+      "Event": {
+        "type": "object",
+        "properties": {
+          "event_id": { "type": "string" },
+          "event_name": { "type": "string" },
+          "start_date": { "type": "string", "format": "date" },
+          "event_status": { "type": "string", "enum": ["draft", "published", "cancelled"] },
+          "venue": {
+            "type": "object",
+            "properties": {
+              "city": { "type": "string" },
+              "country": { "type": "string" }
+            },
+            "required": ["city", "country"]
+          }
+        },
+        "required": ["event_id", "event_name", "start_date", "event_status"]
+      }
+    }
+  }
+}

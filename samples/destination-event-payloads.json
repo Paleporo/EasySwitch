@@ -1,0 +1,18 @@
+[
+  {
+    "id": "evt-1001",
+    "title": "Developer Summit",
+    "eventStart": "2026-04-01T00:00:00Z",
+    "statusCode": "P",
+    "locationCity": "Austin",
+    "locationCountry": "US"
+  },
+  {
+    "id": "evt-1002",
+    "title": "Partner Launch",
+    "eventStart": "2026-05-15T00:00:00Z",
+    "statusCode": "D",
+    "locationCity": "Berlin",
+    "locationCountry": "DE"
+  }
+]

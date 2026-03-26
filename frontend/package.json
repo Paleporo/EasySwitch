@@ -1,0 +1,9 @@
+{
+  "name": "easyswitch-frontend",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node dev-server.js",
+    "test": "node --test"
+  }
+}
